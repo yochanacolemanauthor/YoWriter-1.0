@@ -1,9 +1,9 @@
 # YoWriter-1.0
 
 ##YoWriter 1.0 project repository
-A simple article writing program created by a hobbyist for hobbyists.
+A simple article writing program created by a hobbyest.
 
-YoWriter is my personal project in learning Python to create a lightweight article writing program that's not stuffed with crap I don't need. 
+YoWriter is my personal project in learning Python. The Goal: create a lightweight article writing program that's not stuffed with crap I don't need. 
 
 ##About the Project
 
@@ -21,4 +21,4 @@ And this is it.
 
 ##Current Status
 version 1.0: Early development
-This is my first working version. I have improvement ideas I'm mulling over.
+This is my first working version. I still have improvement ideas I'm mulling over.
