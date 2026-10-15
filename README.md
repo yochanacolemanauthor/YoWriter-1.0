@@ -1,3 +1,4 @@
+October 14, 2026
 # YoWriter-1.0
 
 ## YoWriter 1.0 project repository
@@ -22,3 +23,7 @@ And this is it.
 ## Current Status
 version 1.0: Early development
 This is my first working version. I still have improvement ideas I'm mulling over.
+
+October 15, 2026
+YoWriter version 1.1
+Added a Notes column to save time when something comes to mind.
