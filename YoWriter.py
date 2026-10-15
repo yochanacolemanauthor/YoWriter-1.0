@@ -9,7 +9,8 @@ root.minsize(600, 400)
 
 # Configure the window layout
 root.columnconfigure(0, weight=1, uniform="columns")
-root.columnconfigure(1, weight=4, uniform="columns")
+root.columnconfigure(1, weight=3, uniform="columns")
+root.columnconfigure(2, weight=1, uniform="columns")
 root.rowconfigure(1, weight=4, uniform="rows")
 root.rowconfigure(3, weight=1, uniform="rows")
 
@@ -62,16 +63,18 @@ def make_box(label, row, column, columnspan=1):
     
     return box
 
-# Create the three writing areas
+# Create the four writing areas
 keywords_box = make_box("Keywords", 1, 0)
 article_box = make_box("Article", 1, 1)
+note_box = make_box("Notes", 1, 2)
 tagline_box = make_box("Tagline", 3, 0, columnspan=2)
 
 # Section markers for saving files
 SECTION_MARKERS = (
     "=== KEYWORDS ===",
     "=== ARTICLE ===",
-    "=== TAGLINE ===",
+    "=== NOTES ===",
+    "=== TAGLINE ==="
 )
 
 # Update the word counter
@@ -116,6 +119,13 @@ def save_file():
                 + tagline_box.get("1.0", "end-1c")
                 +"\n"
             )
+            
+            f.write(
+                SECTION_MARKERS[3] + "\n"
+                + note_box.get("1.0", "end-1c")
+                + "\n"
+            )
+            
             
         messagebox.showinfo(
             "Saved",
@@ -178,6 +188,7 @@ def open_file():
     boxes = (
         keywords_box,
         article_box,
+        note_box,
         tagline_box
     )
     
