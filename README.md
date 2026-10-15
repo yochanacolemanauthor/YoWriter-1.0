@@ -1,5 +1,5 @@
 October 14, 2026
-# YoWriter-1.0
+## YoWriter
 
 ## YoWriter 1.0 project repository
 A simple article writing program created by an old bat trying to learn Python.
